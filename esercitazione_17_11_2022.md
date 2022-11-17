@@ -26,7 +26,6 @@ CREATE TABLE progetti(<br />
 &ensp;&ensp;&ensp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
 &ensp;&ensp;&ensp;nome_progetto VARCHAR(128) NOT NULL,<br />
 &ensp;&ensp;&ensp;ID_dipendente INTEGER NOT NULL,<br />
-
 &ensp;&ensp;&ensp;FOREIGN KEY (ID_dipendente)<br />
 &ensp;&ensp;&ensp;REFERENCES dipendenti(ID_dipendente)<br />
 );
