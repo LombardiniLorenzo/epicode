@@ -23,7 +23,7 @@ INSERT INTO dipendenti (ID_dipendente, nome, cognome, eta, data_assunzione)<br /
 
 ### PUNTO 4
 CREATE TABLE progetti(<br />
-&ensp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
+&nbsp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
 &ensp;nome_progetto VARCHAR(128) NOT NULL,<br />
 &ensp;ID_dipendente INTEGER NOT NULL,<br />
 &ensp;FOREIGN KEY (ID_dipendente)<br />
