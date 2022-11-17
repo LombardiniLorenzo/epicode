@@ -29,3 +29,21 @@ CREATE TABLE progetti(<br />
 &ensp;&ensp;&ensp;FOREIGN KEY (ID_dipendente)<br />
 &ensp;&ensp;&ensp;REFERENCES dipendenti(ID_dipendente)<br />
 );
+
+### PUNTO 5
+INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
+&ensp;&ensp;&ensp;VALUES ('Gestionale impianto 3DS', 1234);
+
+INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
+&ensp;&ensp;&ensp;VALUES ('Rete Strutturata B512', 1238);
+
+INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
+&ensp;&ensp;&ensp;VALUES ('Smart FV', 1234);
+
+INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
+&ensp;&ensp;&ensp;VALUES ('FindWorld', 1239);
+   
+INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
+&ensp;&ensp;&ensp;VALUES ('DiscoveryPlace', 1234);
+
+
