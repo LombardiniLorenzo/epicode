@@ -46,4 +46,8 @@ INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
 INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
 &ensp;&ensp;&ensp;VALUES ('DiscoveryPlace', 1234);
 
+### PUNTO 6
+SELECT Composer, COUNT(TrackId) AS 'Tracks' FROM tracks<br />
+&ensp;&ensp;&ensp;GROUP BY Composer<br />
+&ensp;&ensp;&ensp;ORDER BY Tracks DESC;
 
