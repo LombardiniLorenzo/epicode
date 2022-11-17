@@ -4,28 +4,28 @@ sqlite3 DB_azienda
 
 ### PUNTO 2
 CREATE TABLE dipendenti(<br />
-   ID_dipendente INTEGER PRIMARY KEY,<br />
-   nome VARCHAR(64) NOT NULL,<br />
-   cognome VARCHAR(64) NOT NULL,<br />
-   eta INTEGER NOT NULL,<br />
-   data_assunzione DATE NOT NULL<br />
+&ensp;&ensp;&ensp;ID_dipendente INTEGER PRIMARY KEY,<br />
+&ensp;&ensp;&ensp;nome VARCHAR(64) NOT NULL,<br />
+&ensp;&ensp;&ensp;cognome VARCHAR(64) NOT NULL,<br />
+&ensp;&ensp;&ensp;eta INTEGER NOT NULL,<br />
+&ensp;&ensp;&ensp;data_assunzione DATE NOT NULL<br />
 );
 
 ### PUNTO 3
 INSERT INTO dipendenti (ID_dipendente, nome, cognome, eta, data_assunzione)<br />
-   VALUES (1234, 'Lorenzo', 'Lombardini', 20, '2021-08-23');
+&ensp;&ensp;&ensp;VALUES (1234, 'Lorenzo', 'Lombardini', 20, '2021-08-23');
    
 INSERT INTO dipendenti (ID_dipendente, nome, cognome, eta, data_assunzione)<br />
-   VALUES (1238, 'Mario', 'Rossi', 33, '2018-04-21');
+&ensp;&ensp;&ensp;VALUES (1238, 'Mario', 'Rossi', 33, '2018-04-21');
 
 INSERT INTO dipendenti (ID_dipendente, nome, cognome, eta, data_assunzione)<br />
-   VALUES (1239, 'Giovanni', 'Verdi', 27, '2012-01-19');
+&ensp;&ensp;&ensp;VALUES (1239, 'Giovanni', 'Verdi', 27, '2012-01-19');
 
 ### PUNTO 4
 CREATE TABLE progetti(<br />
-&ensp;&ensp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
-&ensp;&ensp;nome_progetto VARCHAR(128) NOT NULL,<br />
+&ensp;&ensp;&ensp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
+&ensp;&ensp;&ensp;nome_progetto VARCHAR(128) NOT NULL,<br />
 &ensp;&ensp;&ensp;ID_dipendente INTEGER NOT NULL,<br />
-&ensp;&ensp;FOREIGN KEY (ID_dipendente)<br />
-&ensp;&ensp;REFERENCES dipendenti(ID_dipendente)<br />
+&ensp;&ensp;&ensp;FOREIGN KEY (ID_dipendente)<br />
+&ensp;&ensp;&ensp;REFERENCES dipendenti(ID_dipendente)<br />
 );
