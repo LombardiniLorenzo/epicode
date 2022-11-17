@@ -56,3 +56,6 @@ SELECT Composer, COUNT(TrackId) AS 'Tracks' FROM tracks<br />
 SELECT SUM(Total) FROM invoices<br />
 &ensp;&ensp;&ensp;WHERE BillingCountry='USA';
 
+### PUNTO 8
+SELECT MIN(Total), MAX(Total) FROM invoices<br />
+&ensp;&ensp;&ensp;WHERE BillingCountry='USA';
