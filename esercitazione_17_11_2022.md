@@ -8,7 +8,8 @@ CREATE TABLE dipendenti(<br />
    nome VARCHAR(64) NOT NULL,<br />
    cognome VARCHAR(64) NOT NULL,<br />
    eta INTEGER NOT NULL,<br />
-   data_assunzione DATE NOT NULL);
+   data_assunzione DATE NOT NULL<br />
+);
 
 ### PUNTO 3
 INSERT INTO dipendenti (ID_dipendente, nome, cognome, eta, data_assunzione)<br />
@@ -21,3 +22,10 @@ INSERT INTO dipendenti (ID_dipendente, nome, cognome, eta, data_assunzione)<br /
    VALUES (1239, 'Giovanni', 'Verdi', 27, '2012-01-19');
 
 ### PUNTO 4
+CREATE TABLE progetti(<br />
+&ensp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
+&ensp;nome_progetto VARCHAR(128) NOT NULL,<br />
+&ensp;ID_dipendente INTEGER NOT NULL,<br />
+&ensp;FOREIGN KEY (ID_dipendente)<br />
+&ensp;REFERENCES dipendenti(ID_dipendente)<br />
+);
