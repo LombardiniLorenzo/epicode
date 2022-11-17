@@ -26,6 +26,7 @@ CREATE TABLE progetti(<br />
 &ensp;&ensp;&ensp;ID_progetto INTEGER PRIMARY KEY AUTOINCREMENT,<br />
 &ensp;&ensp;&ensp;nome_progetto VARCHAR(128) NOT NULL,<br />
 &ensp;&ensp;&ensp;ID_dipendente INTEGER NOT NULL,<br />
+
 &ensp;&ensp;&ensp;FOREIGN KEY (ID_dipendente)<br />
 &ensp;&ensp;&ensp;REFERENCES dipendenti(ID_dipendente)<br />
 );
@@ -50,4 +51,8 @@ INSERT INTO progetti (nome_progetto, ID_dipendente)<br />
 SELECT Composer, COUNT(TrackId) AS 'Tracks' FROM tracks<br />
 &ensp;&ensp;&ensp;GROUP BY Composer<br />
 &ensp;&ensp;&ensp;ORDER BY Tracks DESC;
+
+### PUNTO 7
+SELECT SUM(Total) FROM invoices<br />
+&ensp;&ensp;&ensp;WHERE BillingCountry='USA';
 
