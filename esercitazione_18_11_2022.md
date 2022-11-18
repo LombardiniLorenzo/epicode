@@ -61,7 +61,7 @@ SELECT COUNT(CodS), Localita FROM sinistro<br />
 INSERT INTO sinistro (Localita, Data)<br />
 &ensp;&ensp;&ensp;VALUES ('Napoli','2022-09-21 10:34:09');
 
-### PUNTODELETE FROM sinistro
+### PUNTO 7
 DELETE FROM sinistro<br />
 &ensp;&ensp;&ensp;WHERE Data <= '2000-01-01 00:00:00';
 
