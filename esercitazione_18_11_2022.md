@@ -59,5 +59,7 @@ SELECT COUNT(CodS), Localita FROM sinistro<br />
 
 ### PUNTO 6
 INSERT INTO sinistro (Localita, Data)<br />
-&ensp;&ensp;&ensp;VALUES ('Napoli','2022-11-18 10:34:09');
+&ensp;&ensp;&ensp;VALUES ('Napoli','2022-09-21 10:34:09');
+
+### PUNTO 7
 
