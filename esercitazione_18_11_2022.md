@@ -53,3 +53,11 @@ SELECT Targa, Marca FROM auto<br />
 SELECT COUNT(CodF), Residenza FROM proprietari<br />
 &ensp;&ensp;&ensp;GROUP BY Residenza;
 
+### PUNTO 5
+SELECT COUNT(CodS), Localita FROM sinistro<br />
+&ensp;&ensp;&ensp;GROUP BY Localita;
+
+### PUNTO 6
+INSERT INTO sinistro (Localita, Data)<br />
+&ensp;&ensp;&ensp;VALUES ('Napoli','2022-11-18 10:34:09');
+
