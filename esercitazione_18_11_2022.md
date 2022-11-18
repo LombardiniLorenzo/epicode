@@ -65,3 +65,7 @@ INSERT INTO sinistro (Localita, Data)<br />
 DELETE FROM sinistro<br />
 &ensp;&ensp;&ensp;WHERE Data <= '2000-01-01 00:00:00';
 
+### PUNTO 8
+ALTER TABLE auto<br />
+&ensp;&ensp;&ensp;DROP COLUMN Potenza;
+
