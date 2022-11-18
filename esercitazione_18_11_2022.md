@@ -48,3 +48,8 @@ CREATE TABLE autocoinvolte(<br />
 ### PUNTO 3
 SELECT Targa, Marca FROM auto<br />
 &ensp;&ensp;&ensp;WHERE Cilindrata > 1500 OR Potenza > 100;
+
+### PUNTO 4
+SELECT COUNT(CodF), Residenza FROM proprietari<br />
+&ensp;&ensp;&ensp;GROUP BY Residenza;
+
