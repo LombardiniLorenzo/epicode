@@ -28,3 +28,8 @@ CREATE TABLE auto(<br />
 &ensp;&ensp;&ensp;REFERENCES assicurazione(CodAss)<br />
 );
 
+CREATE TABLE sinistro(<br />
+&ensp;&ensp;&ensp;CodS INTEGER PRIMARY KEY AUTOINCREMENT,<br />
+&ensp;&ensp;&ensp;Localita VARCHAR(64) NOT NULL,<br />
+&ensp;&ensp;&ensp;Data DATETIME NOT NULL<br />
+);
