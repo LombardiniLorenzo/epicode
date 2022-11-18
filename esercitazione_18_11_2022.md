@@ -8,3 +8,10 @@ CREATE TABLE proprietari(<br />
 &ensp;&ensp;&ensp;Nome VARCHAR(64) NOT NULL,<br />
 &ensp;&ensp;&ensp;Residenza VARCHAR(128) NOT NULL<br />
 );
+
+CREATE TABLE assicurazione(<br />
+&ensp;&ensp;&ensp;CodAss INTEGER PRIMARY KEY AUTOINCREMENT,<br />
+&ensp;&ensp;&ensp;Nome VARCHAR(64) NOT NULL,<br />
+&ensp;&ensp;&ensp;Sede VARCHAR(64) NOT NULL<br />
+);
+
