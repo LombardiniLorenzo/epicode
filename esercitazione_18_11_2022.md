@@ -45,4 +45,6 @@ CREATE TABLE autocoinvolte(<br />
 &ensp;&ensp;&ensp;REFERENCES auto(Targa)<br />
 );
 
-
+### PUNTO 3
+SELECT Targa, Marca FROM auto<br />
+&ensp;&ensp;&ensp;WHERE Cilindrata > 1500 OR Potenza > 100;
