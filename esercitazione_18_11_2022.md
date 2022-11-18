@@ -33,3 +33,16 @@ CREATE TABLE sinistro(<br />
 &ensp;&ensp;&ensp;Localita VARCHAR(64) NOT NULL,<br />
 &ensp;&ensp;&ensp;Data DATETIME NOT NULL<br />
 );
+
+CREATE TABLE autocoinvolte(<br />
+&ensp;&ensp;&ensp;CodAc INTEGER PRIMARY KEY AUTOINCREMENT,<br />
+&ensp;&ensp;&ensp;CodS INTEGER NOT NULL,<br />
+&ensp;&ensp;&ensp;Targa VARCHAR(7) NOT NULL,<br />
+&ensp;&ensp;&ensp;ImportoDelDanno FLOAT NOT NULL, <br />
+&ensp;&ensp;&ensp;FOREIGN KEY (CodS)<br />
+&ensp;&ensp;&ensp;REFERENCES sinistro(CodS),<br />
+&ensp;&ensp;&ensp;FOREIGN KEY (Targa)<br />
+&ensp;&ensp;&ensp;REFERENCES auto(Targa)<br />
+);
+
+
