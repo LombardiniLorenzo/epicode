@@ -10,7 +10,7 @@ SELECT orders.OrderID, employees.FirstName, employees.LastName<br />
 
 ### PUNTO 3
 SELECT City FROM suppliers<br />
-UNION<br />
+INTERSECT<br />
 SELECT ShipCity FROM orders;
 
 ### PUNTO 4
