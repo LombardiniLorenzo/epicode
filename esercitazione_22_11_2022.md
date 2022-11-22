@@ -12,3 +12,8 @@ SELECT orders.OrderID, employees.FirstName, employees.LastName<br />
 SELECT City FROM suppliers<br />
 UNION<br />
 SELECT ShipCity FROM orders;
+
+### PUNTO 4
+SELECT City FROM suppliers<br />
+EXCEPT<br />
+SELECT ShipCity FROM orders;
