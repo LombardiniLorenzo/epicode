@@ -1,5 +1,5 @@
 ### PUNTO 1
 SELECT orders.OrderID, customers.ContactName, customers.ContactTitle<br />
-FROM orders<br />
-INNER JOIN customers ON orders.CustomerID = customers.CustomerID;
+&ensp;&ensp;&ensp;FROM orders<br />
+&ensp;&ensp;&ensp;INNER JOIN customers ON orders.CustomerID = customers.CustomerID;
 
