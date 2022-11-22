@@ -17,3 +17,8 @@ SELECT ShipCity FROM orders;
 SELECT City FROM suppliers<br />
 EXCEPT<br />
 SELECT ShipCity FROM orders;
+
+### PUNTO 5
+SELECT products.ProductName, products.UnitPrice, categories.CategoryName<br />
+&ensp;&ensp;&ensp;FROM products<br />
+&ensp;&ensp;&ensp;INNER JOIN categories ON products.CategoryID = categories.CategoryID;
