@@ -15,4 +15,8 @@ SELECT DISTINCT cliente FROM Spedizioni<br />
 &ensp;&ensp;&ensp;ORDER BY cliente;
 
 ### PUNTO 3
+CREATE VIEW ProdottiPiuCariDellaMedia(nome, media) AS<br />
+&ensp;&ensp;&ensp;SELECT ProductName, UnitPrice<br />
+&ensp;&ensp;&ensp;FROM Products<br />
+&ensp;&ensp;&ensp;WHERE UnitPrice > (SELECT AVG(UnitPrice) FROM Products);
 
