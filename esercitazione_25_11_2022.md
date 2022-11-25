@@ -18,6 +18,6 @@ SELECT customer.cust_name, customer.city, customer.grade, salesman.name, salesma
 &ensp;&ensp;&ensp;ORDER BY customer.customer_id DESC;
 
 ### PUNTO 4
-SELECT city FROM customer
-UNION
+SELECT city FROM customer<br />
+UNION<br />
 SELECT city FROM salesman;
