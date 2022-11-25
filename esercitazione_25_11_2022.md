@@ -5,4 +5,3 @@ SELECT customer.cust_name, customer.city, salesman.name, commission<br />
 &ensp;&ensp;&ensp;WHERE salesman.commission > 0.12;
 
 ### PUNTO 2
-
