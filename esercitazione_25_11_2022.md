@@ -21,3 +21,8 @@ SELECT customer.cust_name, customer.city, customer.grade, salesman.name, salesma
 SELECT city FROM customer<br />
 UNION<br />
 SELECT city FROM salesman;
+
+### PUNTO 5
+CREATE VIEW venditoriNewYork AS<br />
+&ensp;&ensp;&ensp;SELECT * FROM salesman<br />
+&ensp;&ensp;&ensp;WHERE city = 'New York';
