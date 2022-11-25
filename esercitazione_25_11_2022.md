@@ -16,3 +16,8 @@ SELECT customer.cust_name, customer.city, customer.grade, salesman.name, salesma
 &ensp;&ensp;&ensp;INNER JOIN salesman ON customer.salesman_id = salesman.salesman_id<br />
 &ensp;&ensp;&ensp;WHERE customer.grade < 300<br />
 &ensp;&ensp;&ensp;ORDER BY customer.customer_id DESC;
+
+### PUNTO 4
+SELECT city FROM customer
+UNION
+SELECT city FROM salesman;
