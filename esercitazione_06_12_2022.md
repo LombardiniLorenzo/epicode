@@ -1,3 +1,7 @@
+Link report:
+https://datastudio.google.com/reporting/bf3ba436-6747-4932-a1de-b82c2391d25c
+
+
 ### PUNTO 1
 SELECT Customers.cust_name, Customers.city, Orders.ord_no, Orders.ord_date, Orders.purch_amt<br />
 FROM Customers LEFT JOIN Orders ON Customers.customer_id = Orders.customer_id<br />
